@@ -1,0 +1,206 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5993020700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User launch the Facebook url",
+            "match": {
+              "location": "FacebookLoginSteps.user_launch_the_Facebook_url()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3606000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp1(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 13153371800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 154800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp2(Scenario)"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "To validate the login function with invalid username and invalid password",
+        "description": "",
+        "id": "to-validate-login-functionality;to-validate-the-login-function-with-invalid-username-and-invalid-password",
+        "after": [
+          {
+            "result": {
+              "duration": 918245201,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown1(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 313600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown2(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 132001,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown3(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 710843899,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User enters the username and password in facebook page",
+            "match": {
+              "location": "FacebookLoginSteps.user_enters_the_username_and_password_in_facebook_page(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "UserName",
+                  "Password"
+                ]
+              },
+              {
+                "cells": [
+                  "Greens",
+                  "456789"
+                ]
+              },
+              {
+                "cells": [
+                  "Hello",
+                  "1234567"
+                ]
+              },
+              {
+                "cells": [
+                  "Greenstech",
+                  "1234"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 177875100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User clicks the login button in facebook page",
+            "match": {
+              "location": "FacebookLoginSteps.user_clicks_the_login_button_in_facebook_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22425879901,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User validates the login failure of facebook page",
+            "match": {
+              "location": "FacebookLoginSteps.user_validates_the_login_failure_of_facebook_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@P1"
+          },
+          {
+            "name": "@FacebookLogin"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@TC01"
+          },
+          {
+            "name": "@Smoke"
+          }
+        ]
+      }
+    ],
+    "name": "To validate Login functionality",
+    "description": "",
+    "id": "to-validate-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/FacebookLoginPage.feature",
+    "tags": [
+      {
+        "name": "@P1",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@FacebookLogin",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 5
+        }
+      },
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 20
+        }
+      }
+    ]
+  }
+]
