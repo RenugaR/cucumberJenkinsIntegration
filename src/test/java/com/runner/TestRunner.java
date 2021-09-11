@@ -9,8 +9,11 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(plugin = { "pretty",
-		"json:src//test//resources//reports//cucumber.json" ,"rerun:target//rereun.txt"}, snippets = SnippetType.CAMELCASE, dryRun = false, strict = true, tags = {
-				"@TC01" }, features = "src\\test\\resources\\Features", glue = "com.stepdef", monochrome = true)
+		"json:src//test//resources//reports//cucumber.json","junit:target/Reports/data.xml" ,
+		"rerun:target//rereun.txt"}, snippets = SnippetType.CAMELCASE, dryRun = false, 
+		strict = true, tags = {
+				"@TC03" }, 
+		features = "src\\test\\resources\\Features", glue = "com.stepdef", monochrome = true)
 public class TestRunner {
 
 	@AfterClass

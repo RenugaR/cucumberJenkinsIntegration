@@ -10,7 +10,7 @@ public class BaseClass {
 
 	public static WebDriver getDriver() {
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\ADMIN\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
+				"C:\\Users\\ADMIN\\eclipse-workspace\\Cucumber7.30AM\\drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		return driver;

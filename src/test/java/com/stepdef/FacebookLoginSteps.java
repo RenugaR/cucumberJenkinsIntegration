@@ -8,6 +8,7 @@ import org.junit.Assert;
 import com.pojo.FacebookLoginPage;
 import com.utils.BaseClass;
 
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -22,7 +23,7 @@ public class FacebookLoginSteps extends BaseClass {
 	}
 
 	@When("User enters the username and password in facebook page")
-	public void user_enters_the_username_and_password_in_facebook_page(DataTable table) {
+	public void user_enters_the_username_and_password_in_facebook_page() {
 		f = new FacebookLoginPage();
 		/*
 		 * List<String> asList = table.asList(); insertType(f.getTxtUserName(),
@@ -44,11 +45,15 @@ public class FacebookLoginSteps extends BaseClass {
 		System.out.println(asMap.get("UserName"));
 		System.out.println(asMap.get("Password"));
 		*/
-		List<Map<String, String>> asMaps = table.asMaps();
+	/*	List<Map<String, String>> asMaps = table.asMaps();
 		insertType(f.getTxtUserName(), asMaps.get(1).get("UserName"));// Greens13
 		insertType(f.getTxtPass(), asMaps.get(0).get("Password"));// 344578
 		System.out.println(asMaps.get(1).get("UserName"));
-		System.out.println(asMaps.get(1).get("UserName"));
+		System.out.println(asMaps.get(1).get("UserName"));*/
+		
+		insertType(f.getTxtUserName(), "Hello");// Greens13
+		insertType(f.getTxtPass(), "45678");// 344578
+	
 	}
 
 	@When("User clicks the login button in facebook page")

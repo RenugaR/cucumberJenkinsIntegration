@@ -20,7 +20,7 @@ public class FacebookLoginPage extends BaseClass{
 	@FindBy(id="pass")
 	private WebElement txtPass;
 	
-	@FindBy(name="login23456")
+	@FindBy(name="login")
 	private WebElement btnLogin;
 
 	public WebElement getTxtUserName() {

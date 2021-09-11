@@ -1,1 +1,1 @@
-file:src/test/resources/Features/FacebookLoginPage.feature:18
+file:src/test/resources/Features/FacebookLoginPage.feature:8
